@@ -15,12 +15,12 @@ function App() {
   return (
     <div class="user_profile_card"> 
     
-    <Userprofilecard image={image1} course="web development" name="Yogesh"  age={22} gender="male" contact="9465782857" email="yogesh@123gmail.com"/>
-    <Userprofilecard image={image2} course="web development" name="Khushal"  age={19} gender="male" contact="9895845924" email="khushal@123gmail.com"/>
-    <Userprofilecard image={image3} course="web development" name="Jenish"  age={20} gender="male" contact="9783373733" email="jenish@123gmail.com"/>
-    <Userprofilecard image={image4} course="web development" name="Vivek"  age={21} gender="male" contact="9347734437" email="Vivek@123gmail.com"/>
-    <Userprofilecard image={image5} course="web development" name="vishal"  age={20} gender="male" contact="9783378964" email="vishal@123gmail.com"/>
-    <Userprofilecard image={image6} course="web development" name="henil"  age={19} gender="male" contact="9123856674" email="henil@123gmail.com"/>
+    <Userprofilecard image={image1} course="web development" name="Yogesh Rathod"  age={22} gender="male" contact="9465782857" email="yogesh@123gmail.com"/>
+    <Userprofilecard image={image2} course="web development" name="Khushal Vaghasiya"  age={19} gender="male" contact="9895845924" email="khushal@123gmail.com"/>
+    <Userprofilecard image={image3} course="web development" name="Jenish Hariyani"  age={20} gender="male" contact="9783373733" email="jenish@123gmail.com"/>
+    <Userprofilecard image={image4} course="web development" name="Vivek Prajapati"  age={21} gender="male" contact="9347734437" email="Vivek@123gmail.com"/>
+    <Userprofilecard image={image5} course="web development" name="vishal Solanki"  age={20} gender="male" contact="9783378964" email="vishal@123gmail.com"/>
+    <Userprofilecard image={image6} course="web development" name="henil "  age={19} gender="male" contact="9123856674" email="henil@123gmail.com"/>
  
     </div>
   )

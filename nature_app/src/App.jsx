@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import List from "./component/list";
 import './App.css'
- import Card from "./component/card"
 
 function App() {
- 
   return (
-   <div>
-    <Card/>
-   </div>
-  )
+    <div class="App">
+      <List />
+    </div>
+  );
 }
 
 export default App;

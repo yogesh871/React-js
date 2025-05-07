@@ -1,0 +1,438 @@
+/* 
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f5f2; 
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+}
+
+.ragi-form {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eae5e1;
+    position: relative;
+    overflow: hidden;
+}
+
+.ragi-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #d4a373, #a68a64);
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.form-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: #d4a373;
+}
+
+.input-detail {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-detail input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-detail input:focus {
+    border-bottom-color: #d4a373;
+}
+
+.input-detail label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.input-detail input:focus ~ label,
+.input-detail input:valid ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #d4a373;
+    letter-spacing: 0.5px;
+}
+
+.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #d4a373;
+    transition: all 0.4s ease;
+}
+
+.input-detail input:focus ~ .focus-border {
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #d4a373;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn:hover {
+    background: #b38b5a;
+    letter-spacing: 1.2px;
+}
+
+.submit-btn::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover::after {
+    opacity: 1;
+    right: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-form {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@media (max-width: 600px) {
+    .ragi-form {
+        padding: 40px 25px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+} */
+
+
+/* Elegant Form Styling */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+:root {
+    --primary: #8b6b4a;
+    --primary-light: #c8b6a6;
+    --text: #333;
+    --text-light: #777;
+    --bg: #f9f5f0;
+    --border: #e0d5c8;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg);
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.ragi-form {
+    background: white;
+    padding: 50px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.ragi-form:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 45px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.title-text {
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--primary);
+    transition: all 0.4s ease;
+}
+
+.form-title:hover .title-underline {
+    width: 100px;
+}
+
+.input-detail {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.input-detail input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+    color: var(--text);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    outline: none;
+    background: transparent;
+    transition: all 0.4s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-detail input:focus {
+    border-bottom-color: var(--primary);
+}
+
+.input-detail label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 15px;
+    color: var(--text-light);
+    pointer-events: none;
+    transition: all 0.4s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.label-char {
+    display: inline-block;
+    transform-origin: bottom left;
+    transition: all 0.3s ease;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.input-detail input:focus ~ label .label-char,
+.input-detail input:valid ~ label .label-char {
+    transform: translateY(-20px) scale(1.2);
+    color: var(--primary);
+}
+
+.input-detail input:focus ~ label .label-rest,
+.input-detail input:valid ~ label .label-rest {
+    opacity: 0;
+    transform: translateX(10px);
+}
+
+.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: all 0.6s ease;
+}
+
+.input-detail input:focus ~ .focus-border {
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary);
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-text {
+    transition: all 0.4s ease;
+}
+
+.btn-icon {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.submit-btn:hover {
+    background: #7a5c3f;
+}
+
+.submit-btn:hover .btn-text {
+    transform: translateX(-10px);
+}
+
+.submit-btn:hover .btn-icon {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.success-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+}
+
+.form-submitted .success-message {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.checkmark {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.checkmark-circle {
+    stroke: var(--primary);
+    stroke-width: 2;
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+    stroke: var(--primary);
+    stroke-width: 2;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+}
+
+.success-message p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--text);
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease 0.9s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .ragi-form {
+        padding: 40px 25px;
+    }
+    
+    .form-title {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+}

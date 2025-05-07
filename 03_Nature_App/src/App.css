@@ -1,0 +1,46 @@
+
+.App{
+ margin-left:450px;
+}
+
+.app-container {
+    width: 400px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .review-form input,
+  .review-form textarea,
+  .review-form select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .review-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .review-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 18px;
+  }
+  

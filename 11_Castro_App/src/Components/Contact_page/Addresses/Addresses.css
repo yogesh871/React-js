@@ -1,0 +1,11 @@
+.Address{
+    padding: 115px 0px 120px 0px;
+}
+@media screen and (max-width: 576px) {
+    .Address .row:nth-child(2) ul{
+        padding:10px 0px ;
+    }
+    .Address {
+        padding: 40px 0px;
+    }
+}

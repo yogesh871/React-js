@@ -1,0 +1,275 @@
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+  }
+  .form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 46, 97, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .form h3 {
+    color: #0a2a5a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .form h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #0a2a5a, #3a7bd5);
+    border-radius: 3px;
+  }
+  
+  .input_details {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .input_details label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #0a2a5a;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input_details input,
+  .input_details select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #0a2a5a;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+  }
+  
+  .input_details input:focus,
+  .input_details select:focus {
+    outline: none;
+    border-color: #3a7bd5;
+    box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.2);
+    background-color: white;
+  }
+  
+  .input_details input:hover,
+  .input_details select:hover {
+    border-color: #3a7bd5;
+  }
+  
+  .input_details select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a2a5a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 1rem;
+    width: 100% !important;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #0a2a5a, #3a7bd5);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 6px rgba(10, 42, 90, 0.1);
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #09306e, #2c6ed5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(10, 42, 90, 0.15);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .input_details:focus-within label {
+    color: #3a7bd5;
+    transform: translateX(5px);
+  }
+  
+  @media (max-width: 640px) {
+    .Form {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .Form h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(10, 42, 90, 0.1);
+    transition: all 0.3s ease;
+    margin: 1rem;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(10, 42, 90, 0.15);
+  }
+  
+  .card-img {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover .card-img img {
+    transform: scale(1.05);
+  }
+  
+  .card-info {
+    padding: 1.5rem;
+  }
+  
+  .card-info h1 {
+    color: #0a2a5a;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .card-info p {
+    color: #4b5563;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .book-price {
+    background: #f0f7ff;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .book-price p {
+    color: #3a7bd5;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .book-category {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background: #f0f7ff;
+    border-radius: 20px;
+  }
+  
+  .book-category p {
+    color: #0a2a5a;
+    font-size: 0.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .edit-delete-btn {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .edit-btn button, 
+  .delete-btn button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .edit-btn button {
+    background: #3a7bd5;
+    color: white;
+  }
+  
+  .delete-btn button {
+    background: #f8fafc;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+  }
+  
+  .edit-btn button:hover {
+    background: #0a2a5a;
+    transform: translateY(-2px);
+  }
+  
+  .delete-btn button:hover {
+    background: #fee2e2;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .edit-btn button:active,
+  .delete-btn button:active {
+    transform: translateY(0);
+    animation: pulse 0.3s ease;
+  }
+  
+  @media (max-width: 640px) {
+    .card {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }

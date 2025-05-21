@@ -1,0 +1,88 @@
+
+
+
+  
+  .accordion-button.collapsed::after {
+    background-color: transparent;
+    color: #fff !important;
+  }
+  
+  .close-btn {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: none !important;
+  }
+  .dropdown-menu.show {
+    display: block !important;
+  }
+   .dropdown-menu {
+    border: none !important;
+    padding: 20px;
+    margin-top: 25px !important;;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+   
+  .TestimonialContainer {
+    width: 100%;
+    padding: 100px 0;
+    background: url(../../assets/images/page-title.jpg) repeat center;
+    background-size: cover;
+    animation: slideBg 30s linear infinite;
+  }
+  
+  @keyframes slideBg {
+    0% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  
+  
+  
+  
+  card {
+    width: 100% !important;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display:none;
+  }
+  
+  
+  
+  .btn-close-white {
+    font-size: 10px;
+    color: #fff !important;
+    opacity: 1 !important;
+    border: 3px solid #707d89 !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  
+  .contact-info li a {
+    color: #fffc;
+  }
+  footer a:hover {
+    color: #ff4137 !important; 
+    text-decoration: underline !important; 
+  }
+  .icon:hover{
+    color: #ff4137 !important;
+  }
+  .cart:hover{
+    color: #ff4137 !important;
+  } 
